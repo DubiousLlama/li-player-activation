@@ -1,17 +1,17 @@
 {
-    "name": "li-player-request",
-    "title": "Lancer Initiative Player Request Exension",
-    "description": "Allows players to request activation from the GM",
-    "author": "Bolts",
+    "name": "li-player-activation",
+    "title": "Lancer Initiative Player Activation",
+    "description": "Allows players to activate initative on their own",
+    "author": "Bolts and MostlyHarmless",
     "type": "module",
-    "version": "0.1.1",
+    "version": "0.0.1",
     "minimumCoreVersion": "0.7.0",
     "compatibleCoreVersion": "0.7.9",
     "socket": "true",
     "esmodules": [
         "./module.js"
     ],
-    "url": "",
-    "manifest": "https://github.com/BoltsJ/li-player-request/releases/latest/download/module.json",
-    "download": "https://github.com/BoltsJ/li-player-request/releases/download/0.1.1/module.zip"
+    "url": "https://github.com/DubiousLlama/li-player-activation",
+    "manifest": "https://raw.githubusercontent.com/DubiousLlama/li-player-activation/default/module.json",
+    "download": "https://github.com/DubiousLlama/li-player-activation/archive/default.zip"
 }
