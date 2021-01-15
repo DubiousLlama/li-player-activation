@@ -4,7 +4,7 @@
     "description": "Allows players to activate initative on their own",
     "author": "Bolts and MostlyHarmless",
     "type": "module",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "minimumCoreVersion": "0.7.0",
     "compatibleCoreVersion": "0.7.9",
     "socket": "true",
