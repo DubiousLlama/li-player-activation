@@ -6,6 +6,7 @@ Hooks.once("ready", () => {
     game.socket.on("module.li-player-activation", function (data) {
 
         const combat = game.combats.find((c) => c.id === data.combat);
+        console.log(combatantId + "has activated initiative II");
         combat.activateCombatant(data.combatant)
     });
 });
