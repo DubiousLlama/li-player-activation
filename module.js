@@ -6,9 +6,9 @@ Hooks.once("ready", () => {
     // Only a gm can approve, so only register the socket handler for them
     if (!game.user.isGM)
         return;
-    console.log("li-player-request | Registering socket callback");
+    console.log("li-player-activation | Registering socket callback");
     /** @ts-ignore */
-    game.socket.on("module.li-player-request", function (data) {
+    game.socket.on("module.li-player-activation", function (data) {
         var _a, _b, _c;
         // Get data to pass to the form
         const combat = game.combats.find((c) => c.id === data.combat);
@@ -33,7 +33,7 @@ Hooks.on("LancerCombatRequestActivate", (combat, combatantId) => {
     // send a request to activate to the GM(s)
     console.log("Sending activation request for " + combatantId);
 
-    game.socket.emit("module.li-player-request", {
+    game.socket.emit("module.li-player-activation", {
         scene: combat.scene._id,
         combat: combat.id,
         combatant: combatantId,
