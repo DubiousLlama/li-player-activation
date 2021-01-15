@@ -1,9 +1,9 @@
 
 Hooks.once("ready", () => {
 
-    console.log("li-player-request | Registering socket callback");
+    console.log("li-player-activation | Registering socket callback");
     /** @ts-ignore */
-    game.socket.on("module.li-player-request", function (data) {
+    game.socket.on("module.li-player-activation", function (data) {
 
         const combat = game.combats.find((c) => c.id === data.combat);
         combat.activateCombatant(data.combatant)
@@ -22,7 +22,7 @@ Hooks.on("LancerCombatRequestActivate", (combat, combatantId) => {
 
     console.log(combatantId + "has activated initiative");
 
-    game.socket.emit("module.li-player-request", {
+    game.socket.emit("module.li-player-activation", {
         combat: combat.id,
         combatant: combatantId,
     });
